@@ -84,6 +84,21 @@ const App: React.FC = () => {
         {/* Slide 1: Title */}
         {slide === 0 && (
           <SlideWrapper>
+            {/* Logo UIN Salatiga - Moved to Top Left */}
+            <div className="absolute top-6 left-6 md:top-10 md:left-10 flex items-center gap-3 opacity-90">
+              <div className="p-2 bg-white/5 rounded-full backdrop-blur-sm border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                <img 
+                  src="https://www.uinsalatiga.ac.id/wp-content/uploads/2022/12/2022-Web-UIN-Logo-1-1.png" 
+                  alt="Logo UIN Salatiga" 
+                  className="w-10 h-10 md:w-14 md:h-14 object-contain"
+                />
+              </div>
+              <div className="text-left hidden sm:block">
+                 <p className="text-cyan-500/90 font-bold text-sm tracking-wide leading-tight">UIN SALATIGA</p>
+                 <p className="text-slate-500 text-xs font-mono">Universitas Islam Negeri Salatiga</p>
+              </div>
+            </div>
+
             <AtomAnimation />
             <h1 className="text-4xl md:text-6xl font-black text-center mt-8 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-white to-fuchsia-300">
               Deutsch-Jozsa & QFT <br/> on High-Performance Simulators
@@ -92,17 +107,6 @@ const App: React.FC = () => {
               Muhammad Fathir Al Faruq & Juwita Artanti Kusumaningtyas
             </p>
             
-            <div className="flex flex-col items-center mt-6 gap-3">
-              <div className="p-3 bg-white/5 rounded-full backdrop-blur-sm border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                <img 
-                  src="./uinlogo.png" 
-                  alt="Logo UIN Salatiga" 
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
-              <p className="text-cyan-500/80 font-mono tracking-wide">Universitas Islam Negeri Salatiga</p>
-            </div>
-
             <div className="mt-12 animate-bounce">
               <span className="text-xs font-mono text-slate-500">TEKAN SPASI UNTUK MULAI</span>
             </div>
