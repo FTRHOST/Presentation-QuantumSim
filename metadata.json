@@ -1,0 +1,5 @@
+{
+  "name": "QuantumSim Presentation",
+  "description": "Interactive presentation deck for the research paper: Implementation and Analysis of Deutsch-Jozsa and QFT Algorithms on High-Performance Quantum Simulators.",
+  "requestFramePermissions": []
+}
